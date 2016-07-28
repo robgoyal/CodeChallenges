@@ -7,6 +7,7 @@
 
 n = int(raw_input().strip())
 binary_n = bin(n)[2:]
+print binary_n
 elements = []
 count = 0
 for i in binary_n:
@@ -15,5 +16,6 @@ for i in binary_n:
     elif int(i) == 0:
         elements.append(count)
         count = 0
-
+    elements.append(count)
+    print elements, count
 print max(elements)
